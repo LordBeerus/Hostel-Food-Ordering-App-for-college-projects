@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:elevation="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/owner_decision_click"
+        android:layout_toStartOf="@+id/owner_decision_dispatch"
+        android:layout_alignBottom="@+id/owner_decision_dispatch"
+        android:clickable="true" />
+    <TextView
+        android:id="@+id/owner_decision_name"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+       android:textStyle="normal"
+        android:text="hello"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/owner_decision_dispatch" />
+
+    <TextView
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/owner_decision_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:layout_below="@+id/owner_decision_name"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/owner_decision_dispatch" />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id = "@+id/owner_decision_dispatch"
+        android:src="@mipmap/tick_black"
+        android:scaleType="center"
+
+        android:layout_marginEnd="15dp"
+        android:layout_alignBottom="@+id/owner_decision_cancel"
+        android:layout_toStartOf="@+id/owner_decision_cancel" />
+    <ImageButton
+         android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id = "@+id/owner_decision_cancel"
+        android:src="@mipmap/cross_black_trans"
+        android:scaleType="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

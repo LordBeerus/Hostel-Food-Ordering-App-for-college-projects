@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="false"
+    android:elevation="10dp"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+
+
+    >
+
+    <TextView
+        android:id="@+id/customer_pay_order_dish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="hello"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/customer_pay_order_quant"
+        android:layout_toStartOf="@+id/customer_pay_order_seekbar"
+        android:text="234" />
+
+    <SeekBar
+        android:id="@+id/customer_pay_order_seekbar"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:progress="1"
+
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

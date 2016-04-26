@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:focusable="true"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:paddingTop="10dp"
+android:paddingBottom="10dp"
+android:id="@+id/customer_choose_shop_rel"
+android:clickable="true"
+android:background="?android:attr/selectableItemBackground"
+android:orientation="vertical"
+android:elevation="10dp">
+
+
+
+<TextView
+    android:id="@+id/customer_choose_shop_name"
+    android:textColor="@android:color/black"
+    android:textSize="16dp"
+
+    android:text="hello"
+    android:layout_alignParentTop="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+<TextView
+    android:textColor="@color/statusPos"
+    android:id="@+id/customer_choose_shop_status"
+    android:layout_below="@id/customer_choose_shop_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="hello"/>
+<TextView
+    android:id="@+id/customer_choose_shop_dishes"
+    android:textColor="@android:color/darker_gray"
+    android:text="hello"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/customer_choose_shop_status_img"
+    android:layout_alignParentEnd="true" />
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@android:drawable/presence_online"
+    android:layout_above="@+id/customer_choose_shop_status"
+    android:layout_alignEnd="@+id/customer_choose_shop_status"
+
+    android:id="@+id/customer_choose_shop_status_img"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:elevation="10dp">
+<CheckBox
+    android:text="Check"
+     android:clickable="false"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/customer_choose_dish_checkbox"
+
+    android:textSize="16sp"
+    android:layout_alignParentStart="false" />
+    <TextView
+        android:id="@+id/customer_choose_dish_name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_alignBottom="@+id/customer_choose_dish_checkbox"
+        android:layout_alignParentEnd="true" />
+
+
+
+    <TextView
+        android:id="@+id/customer_choose_dish_price"
+
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="16sp"
+        android:layout_alignTop="@+id/customer_choose_dish_name"
+        android:layout_alignEnd="@+id/customer_choose_dish_name" />
+
+</RelativeLayout>

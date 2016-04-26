@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cse.pec.foodapp">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".choose_option"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login"
+            android:label="Hunger Chains - Catching Orders"
+            android:parentActivityName=".choose_option"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".choose_option"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.login" />
+        </activity>
+        <activity
+            android:name=".customer_main"
+            android:label="@string/title_activity_customer_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".owner_main"
+            android:label="@string/title_activity_owner_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+
+        <activity
+            android:name=".customer_show_shops"
+            android:label="@string/title_activity_customer_show_shops"
+            android:parentActivityName=".customer_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.customer_main" />
+        </activity>
+        <activity
+            android:name=".customer_choose_dish"
+            android:label="@string/title_activity_customer_choose_dish"
+            android:parentActivityName=".customer_show_shops"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.customer_show_shops" />
+        </activity>
+        <activity
+            android:name=".add_dish_owner"
+            android:label="@string/title_activity_add_dish_owner"
+            android:parentActivityName=".owner_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.owner_main" />
+        </activity>
+        <activity
+            android:name=".owner_see_dishes"
+            android:label="@string/title_activity_owner_see_dishes"
+            android:parentActivityName=".owner_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.owner_main" />
+        </activity>
+        <activity
+            android:name=".customer_order_list_pay"
+            android:label="@string/title_activity_customer_order_list_pay"
+            android:parentActivityName=".customer_choose_dish"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.customer_choose_dish" />
+        </activity>
+        <activity
+            android:name=".customer_see_previous_orders"
+            android:label="@string/title_activity_customer_see_previous_orders"
+            android:parentActivityName=".customer_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.customer_main" />
+        </activity>
+        <activity
+            android:name=".owner_see_prev_dishes"
+            android:label="@string/title_activity_owner_see_prev_dishes"
+            android:parentActivityName=".owner_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.owner_main" />
+        </activity>
+        <activity
+            android:name=".owner_current_orders"
+            android:label="@string/title_activity_owner_current_orders"
+            android:parentActivityName=".owner_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.owner_main" />
+        </activity>
+        <activity
+            android:name=".cutomer_prev_order_details"
+            android:label="@string/title_activity_cutomer_prev_order_details"
+            android:parentActivityName=".customer_see_previous_orders"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.customer_see_previous_orders" />
+        </activity>
+        <activity
+            android:name=".owner_current_order_details"
+            android:label="@string/title_activity_owner_current_order_details"
+            android:parentActivityName=".owner_current_orders"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.owner_current_orders" />
+        </activity>
+        <activity
+            android:name=".owner_see_prev_order_details"
+            android:label="@string/title_activity_owner_see_prev_order_details"
+            android:parentActivityName=".owner_see_prev_dishes"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.cse.pec.foodapp.owner_see_prev_dishes" />
+        </activity>
+    </application>
+
+</manifest>

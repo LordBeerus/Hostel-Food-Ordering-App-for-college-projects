@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_register">register</string>
+    <string name="title_activity_customer_main">customer_main</string>
+    <string name="title_activity_owner_name">owner_name</string>
+    <string name="title_activity_add_new_dish">add_new_dish</string>
+    <string name="title_activity_customer_show_shops">customer_show_shops</string>
+    <string name="title_activity_customer_choose_dish">customer_choose_dish</string>
+    <string name="title_activity_add_dish_owner">add_dish_owner</string>
+    <string name="title_activity_owner_see_dishes">owner_see_dishes</string>
+    <string name="title_activity_customer_order_list_pay">customer_order_list_pay</string>
+    <string name="title_activity_customer_see_previous_orders">customer_see_previous_orders</string>
+    <string name="title_activity_owner_see_prev_dishes">Previous Dishes</string>
+    <string name="title_activity_owner_current_orders">owner_current_orders</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cutomer_prev_order_details">cutomer_prev_order_details</string>
+    <string name="title_activity_owner_current_order_details">owner_current_order_details</string>
+    <string name="title_activity_owner_see_prev_order_details">owner_see_prev_order_details</string>
+</resources>
